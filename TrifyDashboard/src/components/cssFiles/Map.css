@@ -1,0 +1,42 @@
+
+  
+  
+  :root {
+      --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+  }
+  
+  
+  .leaflet-container {
+    height: 1400vh;
+    width: 100%; 
+    display: flex;
+    background: #303030;
+  }
+  
+  .leaflet-routing-alt {
+    display: none
+  }
+  
+  .leaflet-layer,
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out,
+  .leaflet-control-attribution {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  }
+  
+  .map-container {
+    flex: 1;
+  }
+  
+  .timeline-container {
+    position: fixed;
+    top: 9.5%;
+    right: 1%;
+    z-index: 1000;
+
+    display: inline-block;
+    width: min-content;
+    /* width: 32%; */
+    height: min-content;
+  }
+  

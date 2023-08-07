@@ -1,0 +1,55 @@
+.App {
+  /* text-align: center; */
+  display: flex;
+}
+
+main {
+  /* padding: 10px; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+
+.leaflet-container {
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  background: #303030;
+}
+
+.leaflet-routing-alt {
+  display: none
+}
+
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+.map-container {
+  flex: 1;
+}
+
+.timeline-container {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 600px; /* Adjust width as needed */
+  /* height: 40vh; Adjust height as needed */
+  /* background-color: #fff; Set desired background color */
+  z-index: 1999;
+  background-color: #fff;
+  border-radius: 1rem;
+  /* margin-left: 20px */
+}
+
+

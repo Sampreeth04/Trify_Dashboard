@@ -1,0 +1,83 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 300px; /* Estimated dummy value for --#{$prefix}card-height */
+    color: #333; /* Estimated dummy value for --#{$prefix}body-color */
+    word-wrap: break-word;
+    background-color: #f8f9fa; /* Estimated dummy value for --#{$prefix}card-bg */
+    background-clip: border-box;
+    border: 1px solid #e9ecef; /* Estimated dummy value for --#{$prefix}card-border-color */
+    border-radius: 0.25rem; /* Estimated dummy value for --#{$prefix}card-border-radius */
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); /* Estimated dummy value for --#{$prefix}card-box-shadow */
+  
+    > hr {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    > .list-group {
+      border-top: inherit;
+      border-bottom: inherit;
+  
+      &:first-child {
+        border-top-width: 0;
+        border-top-left-radius: 0.25rem; /* Estimated dummy value for --#{$prefix}card-inner-border-radius */
+        border-top-right-radius: 0.25rem; /* Estimated dummy value for --#{$prefix}card-inner-border-radius */
+      }
+  
+      &:last-child {
+        border-bottom-width: 0;
+        border-bottom-left-radius: 0.25rem; /* Estimated dummy value for --#{$prefix}card-inner-border-radius */
+        border-bottom-right-radius: 0.25rem; /* Estimated dummy value for --#{$prefix}card-inner-border-radius */
+      }
+    }
+  
+    > .card-header + .list-group,
+    > .list-group + .card-footer {
+      border-top: 0;
+    }
+  }
+  
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1rem var(--#{$prefix}card-spacer-x, 1.25rem); /* Estimated dummy value for --#{$prefix}card-spacer-y and --#{$prefix}card-spacer-x */
+    color: #333; /* Estimated dummy value for --#{$prefix}card-color */
+  }
+  
+  .card-title {
+    margin-bottom: 1rem; /* Estimated dummy value for --#{$prefix}card-title-spacer-y */
+    color: #007bff; /* Estimated dummy value for --#{$prefix}card-title-color */
+  }
+  
+  .card-subtitle {
+    margin-top: calc(-0.5rem); /* Estimated dummy value for --#{$prefix}card-title-spacer-y */
+    margin-bottom: 0;
+    color: #6c757d; /* Estimated dummy value for --#{$prefix}card-subtitle-color */
+  }
+  
+  .card-header {
+    padding: 0.75rem 1.25rem; /* Estimated dummy value for --#{$prefix}card-cap-padding-y and --#{$prefix}card-cap-padding-x */
+    margin-bottom: 0;
+    color: #333; /* Estimated dummy value for --#{$prefix}card-cap-color */
+    background-color: #f7f7f9; /* Estimated dummy value for --#{$prefix}card-cap-bg */
+    border-bottom: 1px solid #e9ecef; /* Estimated dummy value for --#{$prefix}card-border-color */
+  
+    &:first-child {
+      border-top-left-radius: 0.25rem; /* Estimated dummy value for --#{$prefix}card-inner-border-radius */
+      border-top-right-radius: 0.25rem; /* Estimated dummy value for --#{$prefix}card-inner-border-radius */
+    }
+  }
+  
+  .card-footer {
+    padding: 0.75rem 1.25rem; /* Estimated dummy value for --#{$prefix}card-cap-padding-y and --#{$prefix}card-cap-padding-x */
+    color: #333; /* Estimated dummy value for --#{$prefix}card-cap-color */
+    background-color: #f7f7f9; /* Estimated dummy value for --#{$prefix}card-cap-bg */
+    border-top: 1px solid #e9ecef; /* Estimated dummy value for --#{$prefix}card-border-color */
+  
+    &:last-child {
+      border-bottom-left-radius: 0.25rem; /* Estimated dummy value for --#{$prefix}card-inner-border-radius */
+      border-bottom-right-radius: 0.25rem; /* Estimated dummy value for --#{$prefix}card-inner-border-radius */
+    }
+  }

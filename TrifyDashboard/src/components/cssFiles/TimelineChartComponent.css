@@ -1,0 +1,41 @@
+.timeline {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .time-axis {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    padding-right: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .time-slot {
+    height: 40px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+  }
+  
+  .block-container {
+    position: relative;
+    flex: 1;
+    padding-left: 10px;
+  }
+  
+  .block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #65a7f3;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .block:hover {
+    background-color: #4387e6;
+  }
+  
