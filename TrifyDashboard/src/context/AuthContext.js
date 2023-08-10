@@ -36,10 +36,14 @@ export const AuthProvider = ({ children }) => {
     console.log("attempting log in");
     e.preventDefault();
     try {
-      let response = await Axios.post("https://dev-api.trify.us/api/token/", {
-        username: e.target.email.value,
-        password: e.target.password.value,
-      });
+      let response = await Axios.post(
+        "https://dev-api.trify.us/api/token/",
+        // "http://0.0.0.0:8000/api/token/",
+        {
+          username: e.target.email.value,
+          password: e.target.password.value,
+        }
+      );
       console.log(response.data);
       // if (response.status === 200) {
       setAuthTokens(response.data);
@@ -65,6 +69,7 @@ export const AuthProvider = ({ children }) => {
     try {
       let response = await Axios.post(
         "https://dev-api.trify.us/api/token/refresh/",
+        // "http://0.0.0.0:8000/api/token/refresh/",
         {
           refresh: authTokens?.refresh,
         }
